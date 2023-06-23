@@ -1,0 +1,366 @@
+body { 
+    background-color: #FFEB00;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.top-logo {
+    height: 45px;
+}
+
+.mid-box {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-player {
+    border: solid #CCBB06 10px;
+    border-radius: 15px;
+    background-color: #E9D705;
+    height: 460px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #312F30;
+    font-size: 3.3vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px #0e010149;
+}
+
+.playertitle {
+    text-align: center;
+}
+
+button {
+    margin-top: 100px;
+    font-size: 27px;
+    width: 200px;
+    height: auto;
+    line-height: 2;
+    border-radius: 6px;
+    background-image: linear-gradient(rgba(255, 254, 210, 0.76), rgba(163, 162, 112, 0.466));
+}
+
+.tutorial-img {
+    background-image: url(images/tutorial-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f5e425;
+    background-position-y: center;
+}
+ 
+.hidden-area {
+    visibility: hidden;
+}
+
+.playing-buttons {
+    position: relative;
+}
+
+.rock-button {
+    border: solid #CCBB06;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    background-color: #FFEB00;
+    position: absolute;
+    top: -330px;
+    left: -152px;
+    font-size: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px #0e010149;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-image: url(images/rock-icon.png);
+    background-repeat: no-repeat;
+    background-position: 200px 13px;
+    background-size: 60px;
+}
+
+.paper-button {
+    border: solid #CCBB06;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    background-color: #FFEB00;
+    position: absolute;
+    top: -190px;
+    left: -152px;
+    font-size: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px #0e010149;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-image: url(images/paper-icon.png);
+    background-repeat: no-repeat;
+    background-position: 200px 13px;
+    background-size: 60px;
+}
+
+.scissors-button {
+    border: solid #CCBB06;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    background-color: #FFEB00;
+    position: absolute;
+    top: -50px;
+    left: -152px;
+    font-size: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px #0e010149;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-image: url(images/scissors-icon.png);
+    background-repeat: no-repeat;
+    background-position: 200px 13px;
+    background-size: 60px;
+}
+
+.p2 {
+    margin-bottom: 10px;
+    color: #312F30;
+    font-size: 3.7vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px #0e010149;
+    display: flex;
+    justify-content: center;
+}
+
+.user-choice {
+    background-repeat: no-repeat;
+    background-color: center;
+    position: absolute;
+    top: 318px;
+    background-size: 210px;
+    height: 258px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #312F30;
+    font-size: 3.3vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px #0e010149;
+}
+
+.computer-choice {
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 49% 22%;
+}
+
+.text-computer-choice {
+    font-size: 3.3vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px #0e010149;
+    position: relative;
+    top: -200px;
+    color: #312F30;
+}
+
+.result-title {
+    color: white;
+    font-size: 8vh;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px #929292;
+    margin-top: 27px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.play-again-button {
+    margin-top: 70px;
+    font-size: 27px;
+    width: 250px;
+    height: 100;
+    line-height: 2;
+    border: solid #CCBB06 3px;
+    border-radius: 6px;
+    background-image: linear-gradient(rgba(255, 254, 210, 0.76), rgba(163, 162, 112, 0.466));
+    position: relative;
+    top: -100px;
+    color: #817a24;
+    font-size: 4vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px #685c1b;
+}
+
+.score {
+    color: #968a06;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.user {
+    top: -79px;
+    left: -155px;
+}
+
+.computer {
+    top: -40px;
+    left: -135px;
+}
+
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media (width<700px) {
+    .box-player {
+        border: solid #CCBB06 10px;
+        border-radius: 15px;
+        background-color: #E9D705;
+        height: 230px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rock-button {
+        border: solid #CCBB06;
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+        background-color: #FFEB00;
+        position: absolute;
+        top: -165px;
+        left: -76px;
+        font-size: 34px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-shadow: 2px 2px #0e010149;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        background-image: url(images/rock-icon.png);
+        background-repeat: no-repeat;
+        background-position: 200px 13px;
+        background-size: 60px;
+    }
+    
+    .paper-button {
+        border: solid #CCBB06;
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+        background-color: #FFEB00;
+        position: absolute;
+        top: -95px;
+        left: -76px;
+        font-size: 34px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-shadow: 2px 2px #0e010149;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        background-image: url(images/paper-icon.png);
+        background-repeat: no-repeat;
+        background-position: 200px 13px;
+        background-size: 60px;
+    }
+    
+    .scissors-button {
+        border: solid #CCBB06;
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+        background-color: #FFEB00;
+        position: absolute;
+        top: -25px;
+        left: -76px;
+        font-size: 32px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-shadow: 2px 2px #0e010149;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        background-image: url(images/scissors-icon.png);
+        background-repeat: no-repeat;
+        background-position: 200px 13px;
+        background-size: 60px;
+    }
+
+    button {
+        margin-top: 50px;
+        font-size: 14px;
+        width: 100px;
+        height: auto;
+        line-height: 2;
+        border-radius: 6px;
+        background-image: linear-gradient(rgba(255, 254, 210, 0.76), rgba(163, 162, 112, 0.466));
+    }
+    .user-choice {
+        background-repeat: no-repeat;
+        background-color: center;
+        position: absolute;
+        top: 308px;
+        background-size: 105px;
+        height: 129px;
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: #312F30;
+        font-size: 1.9vh;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px #0e010149;
+    }   
+
+    .play-again-button {
+        margin-top: 35px;
+        font-size: 14px;
+        width: 125px;
+        height: 50;
+        line-height: 2;
+        border: solid #CCBB06 3px;
+        border-radius: 6px;
+        background-image: linear-gradient(rgba(255, 254, 210, 0.76), rgba(163, 162, 112, 0.466));
+        position: relative;
+        top: -50px;
+        color: #817a24;
+        font-size: 2vh;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 1px 1px #685c1b;
+    }
+
+    .score {
+        visibility: hidden;
+    }
+
+    .text-computer-choice {
+        font-size: 1.9vh;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px #0e010149;
+        position: relative;
+        top: -100px;
+        color: #312F30;
+    }
+
+    .computer-choice {
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: 55%;
+        background-position: 49% 37%;
+    }
+    .full-img {
+        background-size: 100%;
+    }
+}
